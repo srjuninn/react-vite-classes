@@ -1,0 +1,75 @@
+/* Reset CSS Moderno e Top */
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; /* evita zoom automático em mobile */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+body {
+/* apenas para testes */
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+/* apenas para testes */
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Remove estilos padrão de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Links sem sublinhado, mas com foco acessível */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Imagens responsivas */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inputs e botões mais consistentes */
+button, input, select, textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Botões clicáveis */
+button {
+  cursor: pointer;
+}
+
+/* Tabelas limpas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
