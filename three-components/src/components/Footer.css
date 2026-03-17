@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+
+  border-radius: 2rem 2rem 0rem 0rem ;
+  background: #111; /* fundo escuro */
+  color: #f1f1f1;   /* texto claro */
+
+}
+
+footer > a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ff4d4d; /* destaque no texto */
+}
+
+footer > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #ff4d4d;
+  transition: width 0.3s ease;
+}
+
+footer > a:hover {
+  color: #fff; /* muda cor do texto */
+  transform: scale(1.05); /* leve zoom */
+}
+
+footer > a:hover::after {
+  width: 100%; /* underline animado */
+}
